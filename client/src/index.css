@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice:wght@400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(0 0% 4%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(0 0% 4%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(0 0% 4%);
+  --primary: hsl(151 92% 23%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(151 89% 40%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(0 0% 96%);
+  --muted-foreground: hsl(0 0% 46%);
+  --accent: hsl(151 89% 40%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(210 40% 98%);
+  --border: hsl(0 0% 91%);
+  --input: hsl(0 0% 91%);
+  --ring: hsl(151 92% 23%);
+  --chart-1: hsl(151 92% 23%);
+  --chart-2: hsl(151 89% 40%);
+  --chart-3: hsl(151 62% 15%);
+  --chart-4: hsl(0 0% 14%);
+  --chart-5: hsl(0 0% 4%);
+  --corporate: hsl(151 62% 15%);
+  --limitless-green: hsl(151 92% 23%);
+  --limitless-light-green: hsl(151 89% 40%);
+  --limitless-dark-green: hsl(151 62% 15%);
+  --radius: 0.5rem;
+  --font-alice: 'Alice', serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+.dark {
+  --background: hsl(0 0% 4%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(0 0% 4%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(0 0% 4%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(151 89% 40%);
+  --primary-foreground: hsl(0 0% 4%);
+  --secondary: hsl(151 92% 23%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(0 0% 14%);
+  --muted-foreground: hsl(0 0% 64%);
+  --accent: hsl(151 89% 40%);
+  --accent-foreground: hsl(0 0% 4%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(210 40% 98%);
+  --border: hsl(0 0% 14%);
+  --input: hsl(0 0% 14%);
+  --ring: hsl(151 89% 40%);
+  --corporate: hsl(151 62% 15%);
+  --limitless-green: hsl(151 92% 23%);
+  --limitless-light-green: hsl(151 89% 40%);
+  --limitless-dark-green: hsl(151 62% 15%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-alice);
+  }
+}
+
+@layer utilities {
+  .text-corporate {
+    color: var(--corporate);
+  }
+  .bg-corporate {
+    background-color: var(--corporate);
+  }
+  .border-corporate {
+    border-color: var(--corporate);
+  }
+  .hover\:text-corporate:hover {
+    color: var(--corporate);
+  }
+  .hover\:bg-corporate:hover {
+    background-color: var(--corporate);
+  }
+  
+  .text-limitless-green {
+    color: var(--limitless-green);
+  }
+  .bg-limitless-green {
+    background-color: var(--limitless-green);
+  }
+  .text-limitless-light-green {
+    color: var(--limitless-light-green);
+  }
+  .bg-limitless-light-green {
+    background-color: var(--limitless-light-green);
+  }
+  .text-limitless-dark-green {
+    color: var(--limitless-dark-green);
+  }
+  .bg-limitless-dark-green {
+    background-color: var(--limitless-dark-green);
+  }
+  .font-alice {
+    font-family: var(--font-alice);
+  }
+}
